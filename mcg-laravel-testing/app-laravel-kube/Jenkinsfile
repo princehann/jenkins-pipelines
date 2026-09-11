@@ -1,0 +1,13 @@
+@Library('mcg-ci-library') _
+
+containerAppPipeline(
+    appName: 'app-laravel-kube',
+
+    sourceRepo: 'https://github.com/princehann/app-laravel-kube.git',
+    sourceBranch: 'main',
+
+    image: 'docker.io/princehann/app-laravel-kube',
+
+    dockerfile: 'Dockerfile',
+    buildContext: '.'
+)
