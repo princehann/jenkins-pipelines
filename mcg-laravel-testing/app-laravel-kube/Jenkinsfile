@@ -8,6 +8,9 @@ containerAppPipeline(
 
     image: 'docker.io/princehann/app-laravel-kube',
 
+    registryHost: 'docker.io',
+    registryCredentialsId: 'dockerhub-push',
+
     dockerfile: 'Dockerfile',
     buildContext: '.'
 )
