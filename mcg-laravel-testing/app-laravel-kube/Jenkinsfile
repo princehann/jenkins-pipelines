@@ -6,7 +6,7 @@ containerAppPipeline(
     sourceRepo: 'https://github.com/princehann/app-laravel-kube.git',
     sourceBranch: 'main',
 
-    image: 'docker.io/vhandika/app-laravel-kube',
+    image: 'docker.io/vhandika/perpus-laravel',
 
     registryHost: 'docker.io',
     registryCredentialsId: 'dockerhub-push',
