@@ -12,5 +12,10 @@ containerAppPipeline(
     registryCredentialsId: 'dockerhub-push',
 
     dockerfile: 'Dockerfile',
-    buildContext: '.'
+    buildContext: '.',
+
+    // CD
+    deployNamespace: 'mcg-laravel-testing',
+    deploymentName: 'perpus-laravel',
+    deploymentContainer: 'perpus-laravel'
 )
