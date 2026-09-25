@@ -1,12 +1,13 @@
 @Library('mcg-ci-library') _
 
 containerAppPipeline(
-    appName: 'app-laravel-kube',
+    appName: 'ai-api',
 
     sourceRepo: 'https://github.com/princehann/app-laravel-kube.git',
     sourceBranch: 'main',
+    sourceCredentialsId: 'github-repo-read',
 
-    image: 'cr-harbor.mdka.co.id/mcgitinfra/perpus-laravel',
+    image: 'cr-harbor.mdka.co.id/mcgitinfra/ai-api',
 
     registryHost: 'cr-harbor.mdka.co.id',
     registryCredentialsId: 'harbor-push',
@@ -15,7 +16,8 @@ containerAppPipeline(
     buildContext: '.',
 
     // CD
-    deployNamespace: 'mcg-laravel-testing',
-    deploymentName: 'perpus-laravel',
-    deploymentContainer: 'perpus-laravel'
+    deployNamespace: 'mcg-laravel',
+    deploymentName: 'ai-api',
+    deploymentContainer: 'php84-10'
 )
+
