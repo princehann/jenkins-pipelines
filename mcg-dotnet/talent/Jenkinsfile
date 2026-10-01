@@ -10,7 +10,7 @@ containerAppPipeline(
     image: 'cr-harbor.mdka.co.id/mcg-dotnet/talent',
 
     registryHost: 'cr-harbor.mdka.co.id',
-    registryCredentialsId: 'harbor-push',
+    registryCredentialsId: 'harbor-mcg-dotnet-push',
 
     dockerfile: 'Dockerfile',
     buildContext: '.',
