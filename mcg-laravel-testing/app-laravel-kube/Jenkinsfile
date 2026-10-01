@@ -5,6 +5,7 @@ containerAppPipeline(
 
     sourceRepo: 'https://github.com/princehann/app-laravel-kube.git',
     sourceBranch: 'main',
+    sourceCredentialsId: 'github-repo-read',
 
     image: 'docker.io/vhandika/perpus-laravel',
 
