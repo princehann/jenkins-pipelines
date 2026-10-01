@@ -1,0 +1,22 @@
+@Library('mcg-ci-library') _
+
+containerAppPipeline(
+    appName: 'talent',
+
+    sourceRepo: 'https://dev.azure.com/merdekacoppergold/AI%20ML%20Merdeka/_git/AIRecruitment',
+    sourceBranch: 'main',
+    sourceCredentialsId: 'azure-farhan-it',
+
+    image: 'cr-harbor.mdka.co.id/mcg-dotnet/talent',
+
+    registryHost: 'cr-harbor.mdka.co.id',
+    registryCredentialsId: 'harbor-push',
+
+    dockerfile: 'Dockerfile',
+    buildContext: '.',
+
+    // CD
+    deployNamespace: 'mcg-dotnet',
+    deploymentName: 'talent',
+    deploymentContainer: 'dotnet9harbor-talent'
+)
