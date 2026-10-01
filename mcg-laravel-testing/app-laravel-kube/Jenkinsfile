@@ -9,7 +9,7 @@ containerAppPipeline(
     image: 'docker.io/vhandika/perpus-laravel',
 
     registryHost: 'docker.io',
-    registryCredentialsId: 'docker-push',
+    registryCredentialsId: 'dockerhub-push',
 
     dockerfile: 'Dockerfile',
     buildContext: '.',
