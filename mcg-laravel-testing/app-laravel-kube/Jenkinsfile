@@ -6,10 +6,10 @@ containerAppPipeline(
     sourceRepo: 'https://github.com/princehann/app-laravel-kube.git',
     sourceBranch: 'main',
 
-    image: 'cr-harbor.mdka.co.id/mcgitinfra/perpus-laravel',
+    image: 'docker.io/vhandika/perpus-laravel',
 
-    registryHost: 'cr-harbor.mdka.co.id',
-    registryCredentialsId: 'harbor-push',
+    registryHost: 'docker.io',
+    registryCredentialsId: 'docker-push',
 
     dockerfile: 'Dockerfile',
     buildContext: '.',
