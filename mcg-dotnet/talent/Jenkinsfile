@@ -5,7 +5,7 @@ containerAppPipeline(
 
     sourceRepo: 'https://dev.azure.com/merdekacoppergold/AI%20ML%20Merdeka/_git/AIRecruitment',
     sourceBranch: 'main',
-    sourceCredentialsId: 'azure-farhan-it',
+    sourceCredentialsId: 'azure-pakkris-it',
 
     image: 'cr-harbor.mdka.co.id/mcg-dotnet/talent',
 
