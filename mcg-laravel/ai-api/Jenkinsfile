@@ -7,7 +7,7 @@ containerAppPipeline(
     sourceBranch: 'main',
     sourceCredentialsId: 'github-repo-read',
 
-    image: 'cr-harbor.mdka.co.id/mcgitinfra/ai-api',
+    image: 'cr-harbor.mdka.co.id/mcgitinfra/mdka-api',
 
     registryHost: 'cr-harbor.mdka.co.id',
     registryCredentialsId: 'harbor-push',
@@ -17,7 +17,7 @@ containerAppPipeline(
 
     // CD
     deployNamespace: 'mcg-laravel',
-    deploymentName: 'ai-api',
+    deploymentName: 'mdka-api',
     deploymentContainer: 'php84-10'
 )
 
