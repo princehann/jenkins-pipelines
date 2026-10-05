@@ -10,7 +10,7 @@ containerAppPipeline(
     image: 'cr-harbor.mdka.co.id/mcg-laravel/mdka-api',
 
     registryHost: 'cr-harbor.mdka.co.id',
-    registryCredentialsId: 'harbor-push',
+    registryCredentialsId: 'harbor-mcg-laravel-push',
 
     dockerfile: 'Dockerfile',
     buildContext: '.',
