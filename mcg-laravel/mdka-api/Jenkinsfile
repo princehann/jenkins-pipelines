@@ -4,7 +4,7 @@ containerAppPipeline(
     appName: 'mdka-api',
 
     sourceRepo: 'https://dev.azure.com/merdekacoppergold/Laravel-API/_git/Laravel-API',
-    sourceBranch: 'main',
+    sourceBranch: 'infra',
     sourceCredentialsId: 'github-repo-read',
 
     image: 'cr-harbor.mdka.co.id/mcgitinfra/mdka-api',
