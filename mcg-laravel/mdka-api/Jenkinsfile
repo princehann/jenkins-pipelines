@@ -7,7 +7,7 @@ containerAppPipeline(
     sourceBranch: 'infra',
     sourceCredentialsId: 'github-repo-read',
 
-    image: 'cr-harbor.mdka.co.id/mcgitinfra/mdka-api',
+    image: 'cr-harbor.mdka.co.id/mcg-laravel/mdka-api',
 
     registryHost: 'cr-harbor.mdka.co.id',
     registryCredentialsId: 'harbor-push',
