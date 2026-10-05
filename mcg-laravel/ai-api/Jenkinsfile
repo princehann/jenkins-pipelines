@@ -1,9 +1,9 @@
 @Library('mcg-ci-library') _
 
 containerAppPipeline(
-    appName: 'ai-api',
+    appName: 'mdka-api',
 
-    sourceRepo: 'https://github.com/princehann/app-laravel-kube.git',
+    sourceRepo: 'https://dev.azure.com/merdekacoppergold/Laravel-API/_git/Laravel-API',
     sourceBranch: 'main',
     sourceCredentialsId: 'github-repo-read',
 
@@ -18,6 +18,6 @@ containerAppPipeline(
     // CD
     deployNamespace: 'mcg-laravel',
     deploymentName: 'mdka-api',
-    deploymentContainer: 'php84-10'
+    deploymentContainer: 'mcg-lav-api'
 )
 
