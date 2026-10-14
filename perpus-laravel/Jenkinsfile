@@ -1,0 +1,22 @@
+@Library('mcg-ci-library-testing') _
+
+containerAppPipeline(
+    appName: 'perpus-laravel',
+
+    sourceRepo: 'https://github.com/princehann/app-laravel-kube',
+    sourceBranch: 'main',
+    sourceCredentialsId: 'github-dika',
+
+    image: 'cr-harbor.mdka.co.id/cache-testing/perpus-laravel',
+
+    registryHost: 'cr-harbor.mdka.co.id',
+    registryCredentialsId: 'harbor-mcg-laravel-testing-push',
+
+    dockerfile: 'perpus-laravel/Dockerfile',
+    buildContext: '.',
+
+    // CD
+    deployNamespace: 'mcg-laravel-testing',
+    deploymentName: 'perpus-laravel',
+    deploymentContainer: 'perpus-laravel'
+)
